@@ -1,10 +1,12 @@
 .archive{
-    margin-left: 309px;
+    margin-left: 280px;
+    margin-top: 50px;
 }
 .archive_year_title{
     font-size: 63px;
     font-family: Segoe UI;
     color: #707070;
+    margin-bottom: 50px;
    
 }
 .archive_year_part{
@@ -12,33 +14,43 @@
 }
 
 .archive_month{
-    width: 100%;
+    margin-top: 20px;
     margin-left: 90px;
 }
 .archive_month_title{
-    
     font-size: 63px;
     font-family: Segoe UI;
     color: #707070;
+    height: 70px;
+    width: 110px;
+    text-align: right;
+    padding-top: 0px;
+
 }
 .archive_month_part{
     font-size: 40px;
 }
 .archive_article_box{
-
     border-left-style: solid;
     border-left-color: #707070;
     border-left-width: 1px;
-    margin-left: 236px;
-    padding-top: 30px;
+    margin-top: 10px;
+    margin-left: 120px;
+    padding-top: 5px;
+    padding-bottom: 35px;
 }
 .archive_article{
+    margin-top: 20px;
+    margin-left: 150px;
     font-size: 30px;
     font-family: Segoe UI;
     color: #707070;
-    
+    width: 1100px;
 }
 .cache{
     width: 100%;
-    height: 10px;
+    height: 50px;
+}
+.archive_article_date{
+    float: right;
 }
