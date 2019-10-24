@@ -1,0 +1,44 @@
+.archive{
+    margin-left: 309px;
+}
+.archive_year_title{
+    font-size: 63px;
+    font-family: Segoe UI;
+    color: #707070;
+   
+}
+.archive_year_part{
+    font-size: 40px;
+}
+
+.archive_month{
+    width: 100%;
+    margin-left: 90px;
+}
+.archive_month_title{
+    
+    font-size: 63px;
+    font-family: Segoe UI;
+    color: #707070;
+}
+.archive_month_part{
+    font-size: 40px;
+}
+.archive_article_box{
+
+    border-left-style: solid;
+    border-left-color: #707070;
+    border-left-width: 1px;
+    margin-left: 236px;
+    padding-top: 30px;
+}
+.archive_article{
+    font-size: 30px;
+    font-family: Segoe UI;
+    color: #707070;
+    
+}
+.cache{
+    width: 100%;
+    height: 10px;
+}
