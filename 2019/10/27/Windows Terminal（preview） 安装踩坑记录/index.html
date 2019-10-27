@@ -70,11 +70,11 @@
       <div>
         <h1 id="Windows-Terminal（preview）-安装踩坑记录"><a href="#Windows-Terminal（preview）-安装踩坑记录" class="headerlink" title="Windows Terminal（preview） 安装踩坑记录"></a>Windows Terminal（preview） 安装踩坑记录</h1><p>最近微软新出了一款命令行终端工具Winows Terminal，闲暇时鼓捣了一下，将安装和使用时遇到的坑记录如下：</p>
 <h2 id="（一）关于安装"><a href="#（一）关于安装" class="headerlink" title="（一）关于安装"></a>（一）关于安装</h2><p>​       可直接使用Windows电脑自带的Micsoft Store直接搜索Windos Terminal下载，注意其系统要求，若遇见<strong>可获取但无法安装</strong>的情况，那么您的Windows很有可能需要升级更新操作系统后才能下载</p>
-<p><img src="https://pic2.zhimg.com/v2-022f629e91efac27abb4b7b0d0bca22d_b.png" alt="img"></p>
+<p><img src="../images/v2-022f629e91efac27abb4b7b0d0bca22d_b.png" alt=""></p>
 <h2 id="（二）关于设置"><a href="#（二）关于设置" class="headerlink" title="（二）关于设置"></a>（二）关于设置</h2><p>​       在开始菜单中找到Winows Terminal并打开 ,默认界面的图没有找到，以下是我改造完毕的界面，请忽略我的直男审美hhhh，下面我会阐述一下我修改的思路和具体细节：</p>
-<p><img src="https://pic3.zhimg.com/v2-4ad9ffdc1ff08498627a8349041d04a6_b.png" alt="img"></p>
+<p><img src="../images/v2-4ad9ffdc1ff08498627a8349041d04a6_b.png" alt=""></p>
 <p>（1）首先打开上图界面中的setting选项，会打开一个名为profile.json的json文件，Windows Ternimal的相关配置全部都是基于此配置文件（在此吐槽一下微软的这种配置习惯，好好地整一个配置的图形界面不好吗😤，对于我这种英文不太好的人真的是太不友好了）</p>
-<p><img src="https://pic1.zhimg.com/v2-a49a694c1f9300ca9841876b5404a0f0_b.png" alt="img"></p>
+<p><img src="../images/v2-a49a694c1f9300ca9841876b5404a0f0_b.png" alt=""></p>
 <p>（2）json格式的配置文件，通常是以<strong>“配置项”：配置参数</strong> 的格式来进行配置的，整个配置文件有三个部分，分别是<strong>globals</strong>，<strong>profiles</strong>，<strong>schemes</strong>，我们只需要修改配置项的参数即可对Windows Terminal完成设置</p>
 <p>接下来具体描述几个常用配置：</p>
 <p>（3）globals中的<strong>initialCols/initialRows</strong> 分别设置Windows terminal<strong>窗口的宽和长</strong></p>
@@ -82,10 +82,10 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">,</span><br><span class="line">            &quot;acrylicOpacity&quot; : 0.75,               //毛玻璃透明效果透明度</span><br><span class="line">            &quot;closeOnExit&quot; : true,</span><br><span class="line">            &quot;colorScheme&quot; : &quot;Campbell&quot;,           //schemes中提供的窗口颜色配置的name</span><br><span class="line">            &quot;commandline&quot; : &quot;bash.exe&quot;,</span><br><span class="line">            &quot;cursorColor&quot; : &quot;#7EA2B4&quot;,           //光标颜色</span><br><span class="line">            &quot;cursorShape&quot; : &quot;bar&quot;,               //光标形状</span><br><span class="line">            &quot;fontFace&quot; : &quot;Consolas&quot;,</span><br><span class="line">            &quot;fontSize&quot; : 16,                      //字体大小</span><br><span class="line">            &quot;guid&quot; : &quot;&#123;019f913c-595c-4498-a934-e01e71cd4cbf&#125;&quot;,</span><br><span class="line">            &quot;historySize&quot; : 9001,</span><br><span class="line">            &quot;icon&quot; : &quot; &quot;,                   //图标地址</span><br><span class="line">            &quot;name&quot; : &quot;git-bash&quot;,</span><br><span class="line">            &quot;padding&quot; : &quot;0, 0, 0, 0&quot;,</span><br><span class="line">            &quot;snapOnInput&quot; : true,</span><br><span class="line">            &quot;startingDirectory&quot; : &quot;%USERPROFILE%&quot;,</span><br><span class="line">            &quot;useAcrylic&quot; : true</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>（5）通常打开Windows Terminal后默认打开的是powershell窗口，若要将其设置为<strong>默认打开cmd</strong>，可将<strong>profiles中cmd对应的guid值复制到globals.defaultProfile</strong>中即可</p>
-<p><img src="https://pic4.zhimg.com/v2-edb4659500c4a526f509d7bc3fdbbbdf_b.png" alt="img"></p>
+<p><img src="../images/v2-edb4659500c4a526f509d7bc3fdbbbdf_b.png" alt=""></p>
 <p>  （6）schemes部分主要给出了微软出的6套颜色设计方案，只需将<strong>schemes[]配置项列表中某一方案的name属性值复制到profiles[]中某一窗口的colorScheme属性值</strong>即可设置完毕，也可在网上寻找其他人的颜色设计方案粘贴到schemes[]中，但<strong>建议新手除backgroud属性稍微修改一下背景色外不要去动其他的schemes[]配置项</strong></p>
 <h2 id="（3）关于一些Bug"><a href="#（3）关于一些Bug" class="headerlink" title="（3）关于一些Bug"></a><strong>（3）关于一些Bug</strong></h2><p>​       首先有一个哭笑不得的点就是关于使用鼠标拖动窗口的问题，我在下载完毕后首先就发现按住窗口左边顶部无法对Windows Terminal进行拖动，查询了一些博客后才发现之后<strong>按住右上角红圈处才能对窗口拖动</strong></p>
-<p><img src="https://pic4.zhimg.com/v2-d2ce1b9e187b0dbdfb461c3549564f9f_b.png" alt="img"></p>
+<p><img src="../images/v2-d2ce1b9e187b0dbdfb461c3549564f9f_b.png" alt=""></p>
 <p>​       其次就是我们平常打开cmd或者Powershell时使用的Win+R输入cmd或者Powershell，仍然打开的是windows自带的命令行终端而不是Windows Terminal，这个问题还没有解决，另，据说Windows Terminal还支持支持emoji表情包和超链接，但倒腾了半天还是没有实现，各位大佬如果找到的解决方案可以私信我或者评论区里注明，万分感谢！</p>
 <h2 id="（4）总结"><a href="#（4）总结" class="headerlink" title="（4）总结"></a>（4）总结</h2><p>​       相对于windows自带的命令行工具，Windows Terminal优势在于多标签以及主题可定制的功能，极大地提高了命令行终端的用户体验，据说微软未来还将推出正式版的Windows Terminal工具，对此表示期待</p>
 
