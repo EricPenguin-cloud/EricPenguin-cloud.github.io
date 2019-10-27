@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>IDEA创建maven web工程 步骤整理 | DaDa&#39;s technology Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Eric Penguin">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <script id="hexo-configurations">
+  var CONFIG = {
+    root: '/',
+    theme: 'lx',
+    version: '1.4.5',
+    localsearch:{
+      "enable": true,
+      "trigger": "auto",
+      "top_n_per_article": 1,
+      "unescape": false,
+      "preload": false
+      },
+    path: 'search.xml'
+  };
+</script>
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/jquery.jside.menu.js"></script>
+	<script>
+	$(document).ready(function(){
+	$(".menu-container").jSideMenu({
+	    jSidePosition: "position-right",
+	    jSideSticky: true,
+	    jSideSkin: "endless-river",
+	     });
+	}); 
+	</script>
+  <!--Google_Analytics-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=..."></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '...');
+</script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300|Noto+Serif+SC&amp;display=swap">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
+</head>
+<body>
+<div class="single">
+<div id="page">
+<div id="lx-aside" style="background-image: url(/images/page-cover.jpg)" data-stellar-background-ratio="0.5">
+  <div class="overlay">
+  <div class="page-title">
+    <div class="avatar"><a href="/about/"><img src="/images/person_1.jpg"></a></div>
+    <span>2019-10-27</span>
+    <h2>IDEA创建maven web工程 步骤整理</h2>
+    <div class="tags"><i class="fa fa-tag"></i><a class="tag-link" href="/tags/java/" rel="tag">java</a> <i class="fa fa-tag"></i><a class="tag-link" href="/tags/web/" rel="tag">web</a> <i class="fa fa-tag"></i><a class="tag-link" href="/tags/%E6%93%8D%E4%BD%9C%E7%AC%94%E8%AE%B0/" rel="tag">操作笔记</a></div>
+    <div class="social-links">
+<a href="https://github.com/EricPenguin-cloud" target="_blank"><i class="fa fa-github fa-fw"></i></a><a href="mailto:EricPenguin123@outlook.com" target="_blank" rel="noopener"><i class="fa fa-envelope fa-fw"></i></a><a href="https://weibo.com/EricPlugin" target="_blank"><i class="fa fa-weibo fa-fw"></i></a>
+</div></div>
+</div>
+</div>
+<div id="lx-main-content">
+  <div class="lx-post">
+    <div class="lx-entry padding">
+      <div>
+        <h1 id="IDEA创建maven-web工程-步骤整理"><a href="#IDEA创建maven-web工程-步骤整理" class="headerlink" title="IDEA创建maven web工程 步骤整理"></a>IDEA创建maven web工程 步骤整理</h1><h3 id="一-创建工程"><a href="#一-创建工程" class="headerlink" title="一.创建工程"></a>一.创建工程</h3><h4 id="1-File-gt-New-gt-Project点击创建工程"><a href="#1-File-gt-New-gt-Project点击创建工程" class="headerlink" title="(1)File-&gt;-New-&gt;Project点击创建工程"></a>(1)File-&gt;-New-&gt;Project点击创建工程</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-bc2f946c6cb0cdf9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="2-勾选标记处，并点击next"><a href="#2-勾选标记处，并点击next" class="headerlink" title="(2)勾选标记处，并点击next"></a>(2)勾选标记处，并点击next</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-06de848a69a613a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="3-GroupId-AtifactId自定义，点击next"><a href="#3-GroupId-AtifactId自定义，点击next" class="headerlink" title="(3)GroupId,AtifactId自定义，点击next"></a>(3)GroupId,AtifactId自定义，点击next</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-4e3df873e1fbab9c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="4-关联本地maven仓库"><a href="#4-关联本地maven仓库" class="headerlink" title="(4)关联本地maven仓库"></a>(4)关联本地maven仓库</h4><h5 id="nbsp-nbsp-1-官网下载maven的zip包，并解压到本地"><a href="#nbsp-nbsp-1-官网下载maven的zip包，并解压到本地" class="headerlink" title="&nbsp;&nbsp;1.官网下载maven的zip包，并解压到本地"></a>&nbsp;&nbsp;1.官网下载maven的zip包，并解压到本地</h5><h5 id="nbsp-nbsp-2-在本地maven路径下创建repository文件夹（也可自行定义文件夹所在位置）"><a href="#nbsp-nbsp-2-在本地maven路径下创建repository文件夹（也可自行定义文件夹所在位置）" class="headerlink" title="&nbsp;&nbsp;2.在本地maven路径下创建repository文件夹（也可自行定义文件夹所在位置）"></a>&nbsp;&nbsp;2.在本地maven路径下创建repository文件夹（也可自行定义文件夹所在位置）</h5><h5 id="nbsp-nbsp-3-勾选两个Override，分别绑定maven路径下的settings-xml以及刚新建的repository文件夹，点击next"><a href="#nbsp-nbsp-3-勾选两个Override，分别绑定maven路径下的settings-xml以及刚新建的repository文件夹，点击next" class="headerlink" title="&nbsp;&nbsp;3.勾选两个Override，分别绑定maven路径下的settings.xml以及刚新建的repository文件夹，点击next"></a>&nbsp;&nbsp;3.勾选两个Override，分别绑定maven路径下的settings.xml以及刚新建的repository文件夹，点击next</h5><p><img src="https://upload-images.jianshu.io/upload_images/17073244-7b628aab03488e09.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="5-自行定义工程名和工程文件夹存放路径，点击Finish，工程创建成功"><a href="#5-自行定义工程名和工程文件夹存放路径，点击Finish，工程创建成功" class="headerlink" title="(5)自行定义工程名和工程文件夹存放路径，点击Finish，工程创建成功"></a>(5)自行定义工程名和工程文件夹存放路径，点击Finish，工程创建成功</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-9a5557edc78f2e99.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h3 id="二-配置maven-web工程"><a href="#二-配置maven-web工程" class="headerlink" title="二.配置maven web工程"></a>二.配置maven web工程</h3><h4 id="（1）工程目录如下所示-src存放工程源代码，webapp存放工程web页面文件，pom-xml存放maven项目引用依赖"><a href="#（1）工程目录如下所示-src存放工程源代码，webapp存放工程web页面文件，pom-xml存放maven项目引用依赖" class="headerlink" title="（1）工程目录如下所示,src存放工程源代码，webapp存放工程web页面文件，pom.xml存放maven项目引用依赖"></a>（1）工程目录如下所示,src存放工程源代码，webapp存放工程web页面文件，pom.xml存放maven项目引用依赖</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-5cc1483a5565cd8d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="（2）配置并管理工程文件"><a href="#（2）配置并管理工程文件" class="headerlink" title="（2）配置并管理工程文件"></a>（2）配置并管理工程文件</h4><h5 id="nbsp-nbsp-1-在src文件目录下新建test文件夹，在main文件目录下新建java，resources文件夹"><a href="#nbsp-nbsp-1-在src文件目录下新建test文件夹，在main文件目录下新建java，resources文件夹" class="headerlink" title="&nbsp;&nbsp;1.在src文件目录下新建test文件夹，在main文件目录下新建java，resources文件夹"></a>&nbsp;&nbsp;1.在src文件目录下新建test文件夹，在main文件目录下新建java，resources文件夹</h5><p><img src="https://upload-images.jianshu.io/upload_images/17073244-f61d114871eef273.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h5 id="nbsp-nbsp-2-File-gt-Project-Structrue-gt-Modules"><a href="#nbsp-nbsp-2-File-gt-Project-Structrue-gt-Modules" class="headerlink" title="&nbsp;&nbsp;2.File-&gt;Project Structrue-&gt;Modules"></a>&nbsp;&nbsp;2.File-&gt;Project Structrue-&gt;Modules</h5><h5 id="nbsp-nbsp-nbsp-nbsp-IDEA独特的管理模式，给文件夹添加模块关联，用于设置文件夹的模块种类"><a href="#nbsp-nbsp-nbsp-nbsp-IDEA独特的管理模式，给文件夹添加模块关联，用于设置文件夹的模块种类" class="headerlink" title="&nbsp;&nbsp;&nbsp;&nbsp;IDEA独特的管理模式，给文件夹添加模块关联，用于设置文件夹的模块种类"></a>&nbsp;&nbsp;&nbsp;&nbsp;IDEA独特的管理模式，给文件夹添加模块关联，用于设置文件夹的模块种类</h5><h5 id="nbsp-nbsp-nbsp-nbsp-nbsp-nbsp"><a href="#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp" class="headerlink" title="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5><p><img src="https://upload-images.jianshu.io/upload_images/17073244-3dd2362e089031ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h5 id="nbsp-nbsp-3-对src下的文件夹设置模块关联（鼠标右键点击文件夹并选择对应模块关联）-配置并管理工程文件成功"><a href="#nbsp-nbsp-3-对src下的文件夹设置模块关联（鼠标右键点击文件夹并选择对应模块关联）-配置并管理工程文件成功" class="headerlink" title="&nbsp;&nbsp;3.对src下的文件夹设置模块关联（鼠标右键点击文件夹并选择对应模块关联）,配置并管理工程文件成功"></a>&nbsp;&nbsp;3.对src下的文件夹设置模块关联（鼠标右键点击文件夹并选择对应模块关联）,配置并管理工程文件成功</h5><h4 id="nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-java-gt-Sources"><a href="#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-java-gt-Sources" class="headerlink" title="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;java-&gt;Sources"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;java-&gt;Sources</h4><h4 id="nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-resources-gt-Resources"><a href="#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-resources-gt-Resources" class="headerlink" title="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resources-&gt;Resources"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resources-&gt;Resources</h4><h4 id="nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-test-gt-Tests"><a href="#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-test-gt-Tests" class="headerlink" title="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;test-&gt;Tests"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;test-&gt;Tests</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-76114c744fa7aa14.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h3 id="（3）maven导包功能配置"><a href="#（3）maven导包功能配置" class="headerlink" title="（3）maven导包功能配置"></a>（3）maven导包功能配置</h3><h4 id="nbsp-nbsp-1-打开工程目录中的pom-xml，找到其中的dependencies标签，项目所需导入的包的maven依赖就放在这个标签下"><a href="#nbsp-nbsp-1-打开工程目录中的pom-xml，找到其中的dependencies标签，项目所需导入的包的maven依赖就放在这个标签下" class="headerlink" title="&nbsp;&nbsp;1.打开工程目录中的pom.xml，找到其中的dependencies标签，项目所需导入的包的maven依赖就放在这个标签下"></a>&nbsp;&nbsp;1.打开工程目录中的pom.xml，找到其中的dependencies标签，项目所需导入的包的maven依赖就放在这个标签下</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-d09c3e43e228284b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="nbsp-nbsp-2-网页打开maven的远程仓库官网-搜索你想导入的jar包（这里以mysql-connector-java包为例）"><a href="#nbsp-nbsp-2-网页打开maven的远程仓库官网-搜索你想导入的jar包（这里以mysql-connector-java包为例）" class="headerlink" title="&nbsp;&nbsp;2.网页打开maven的远程仓库官网,搜索你想导入的jar包（这里以mysql-connector-java包为例）"></a>&nbsp;&nbsp;2.网页打开<a href="https://mvnrepository.com/" target="_blank" rel="noopener">maven的远程仓库官网</a>,搜索你想导入的jar包（这里以mysql-connector-java包为例）</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-3bcb2ef094fd1c84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="nbsp-nbsp-3-选择你想导入的jar包"><a href="#nbsp-nbsp-3-选择你想导入的jar包" class="headerlink" title="&nbsp;&nbsp;3.选择你想导入的jar包"></a>&nbsp;&nbsp;3.选择你想导入的jar包</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-5ef7f68ef7221763.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="nbsp-nbsp-4-选择导入jar包的版本"><a href="#nbsp-nbsp-4-选择导入jar包的版本" class="headerlink" title="&nbsp;&nbsp;4.选择导入jar包的版本"></a>&nbsp;&nbsp;4.选择导入jar包的版本</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-144a0d8fdf558e93.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="nbsp-nbsp-5-复制标记框里面的代码"><a href="#nbsp-nbsp-5-复制标记框里面的代码" class="headerlink" title="&nbsp;&nbsp;5.复制标记框里面的代码"></a>&nbsp;&nbsp;5.复制标记框里面的代码</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-857e37bbb3271d42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="nbsp-nbsp-6-将复制的代码粘贴在pom-xml的dependencies标签下"><a href="#nbsp-nbsp-6-将复制的代码粘贴在pom-xml的dependencies标签下" class="headerlink" title="&nbsp;&nbsp;6.将复制的代码粘贴在pom.xml的dependencies标签下"></a>&nbsp;&nbsp;6.将复制的代码粘贴在pom.xml的dependencies标签下</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-e2e63d4433b12698.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="nbsp-nbsp-7-右键单击pom-xml，单击maven-gt-reimport，保证网络顺畅，稍等片刻即导入成功"><a href="#nbsp-nbsp-7-右键单击pom-xml，单击maven-gt-reimport，保证网络顺畅，稍等片刻即导入成功" class="headerlink" title="&nbsp;&nbsp;7.右键单击pom.xml，单击maven-&gt;reimport，保证网络顺畅，稍等片刻即导入成功"></a>&nbsp;&nbsp;7.右键单击pom.xml，单击maven-&gt;reimport，保证网络顺畅，稍等片刻即导入成功</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-7f41797af40ce6bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h3 id="（4）服务器配置（Tomcat）"><a href="#（4）服务器配置（Tomcat）" class="headerlink" title="（4）服务器配置（Tomcat）"></a>（4）服务器配置（Tomcat）</h3><h4 id="nbsp-nbsp-1-下载并安装Tomcat服务器"><a href="#nbsp-nbsp-1-下载并安装Tomcat服务器" class="headerlink" title="&nbsp;&nbsp;1.下载并安装Tomcat服务器"></a>&nbsp;&nbsp;1.下载并安装Tomcat服务器</h4><h4 id="nbsp-nbsp-2-File-gt-Project-Structrue-gt-Artifacts-点击右上“-”，分别添加Web-Application-Exploded和Web-Application-Archive"><a href="#nbsp-nbsp-2-File-gt-Project-Structrue-gt-Artifacts-点击右上“-”，分别添加Web-Application-Exploded和Web-Application-Archive" class="headerlink" title="&nbsp;&nbsp;2.File-&gt;Project Structrue-&gt;Artifacts,点击右上“+”，分别添加Web Application:Exploded和Web Application:Archive"></a>&nbsp;&nbsp;2.File-&gt;Project Structrue-&gt;Artifacts,点击右上“+”，分别添加Web Application:Exploded和Web Application:Archive</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-b8776c7ad84b96da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="nbsp-nbsp-3-具体配置如下：（以工程OnlineVotingSystem为例）"><a href="#nbsp-nbsp-3-具体配置如下：（以工程OnlineVotingSystem为例）" class="headerlink" title="&nbsp;&nbsp;3.具体配置如下：（以工程OnlineVotingSystem为例）"></a>&nbsp;&nbsp;3.具体配置如下：（以工程OnlineVotingSystem为例）</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-a33b338c031b62b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="nbsp-nbsp-4-点击IDEA界面右上角-add-configuration…"><a href="#nbsp-nbsp-4-点击IDEA界面右上角-add-configuration…" class="headerlink" title="&nbsp;&nbsp;4.点击IDEA界面右上角 add configuration…"></a>&nbsp;&nbsp;4.点击IDEA界面右上角 add configuration…</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-fbfce8c72c30fa12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="nbsp-nbsp-5-点击左上角“-”符号，选择Tomcat-Server-gt-Local"><a href="#nbsp-nbsp-5-点击左上角“-”符号，选择Tomcat-Server-gt-Local" class="headerlink" title="&nbsp;&nbsp;5.点击左上角“+”符号，选择Tomcat Server-&gt;Local"></a>&nbsp;&nbsp;5.点击左上角“+”符号，选择Tomcat Server-&gt;Local</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-4c2f144586c8d8f6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="nbsp-nbsp-6-选择标记处的Deployment选项卡，并点击标记处的“-”按钮并选择”Artifact…”"><a href="#nbsp-nbsp-6-选择标记处的Deployment选项卡，并点击标记处的“-”按钮并选择”Artifact…”" class="headerlink" title="&nbsp;&nbsp;6.选择标记处的Deployment选项卡，并点击标记处的“+”按钮并选择”Artifact…”"></a>&nbsp;&nbsp;6.选择标记处的Deployment选项卡，并点击标记处的“+”按钮并选择”Artifact…”</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-d6ab2bf61f98e47a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="nbsp-nbsp-7-选择标记处的选项，并点击ok"><a href="#nbsp-nbsp-7-选择标记处的选项，并点击ok" class="headerlink" title="&nbsp;&nbsp;7.选择标记处的选项，并点击ok"></a>&nbsp;&nbsp;7.选择标记处的选项，并点击ok</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-0d0ebc54ef8718de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="nbsp-nbsp-8-将标记处修改为一下内容，可将服务器修改成热部署模式，即修改更新页面后不需重新启动服务器就可自动更新"><a href="#nbsp-nbsp-8-将标记处修改为一下内容，可将服务器修改成热部署模式，即修改更新页面后不需重新启动服务器就可自动更新" class="headerlink" title="&nbsp;&nbsp;8.将标记处修改为一下内容，可将服务器修改成热部署模式，即修改更新页面后不需重新启动服务器就可自动更新"></a>&nbsp;&nbsp;8.将标记处修改为一下内容，可将服务器修改成热部署模式，即修改更新页面后不需重新启动服务器就可自动更新</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-142ac7bbd4d6d49d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="nbsp-nbsp-9-页面左上角将标记处修改为刚配置的Tomcat服务器，点击运行"><a href="#nbsp-nbsp-9-页面左上角将标记处修改为刚配置的Tomcat服务器，点击运行" class="headerlink" title="&nbsp;&nbsp;9.页面左上角将标记处修改为刚配置的Tomcat服务器，点击运行"></a>&nbsp;&nbsp;9.页面左上角将标记处修改为刚配置的Tomcat服务器，点击运行</h4><p><img src="https://upload-images.jianshu.io/upload_images/17073244-8965836d59fffed9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="nbsp-nbsp-10-服务器启动成功后会自动弹出hello-world页面，maven-web工程创建成功"><a href="#nbsp-nbsp-10-服务器启动成功后会自动弹出hello-world页面，maven-web工程创建成功" class="headerlink" title="&nbsp;&nbsp;10.服务器启动成功后会自动弹出hello world页面，maven web工程创建成功"></a>&nbsp;&nbsp;10.服务器启动成功后会自动弹出hello world页面，maven web工程创建成功</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="lx-navigation">
+	<div class="lx-cover prev lx-cover-sm" style="background-image: url(/images/footer_1.jpg)">
+		<div class="overlay"></div>
+		<a class="copy" href="/2019/10/27/Spring-Boot%E9%9B%86%E6%88%90Mybatis%E7%AC%94%E8%AE%B0/">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Next</span>
+						<h3>Spring Boot集成Mybatis笔记</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+        <div class="lx-cover next lx-cover-sm" style="background-image: url(/images/footer_2.jpg)">
+		<div class="overlay"></div>
+		<a class="copy" href="/2019/10/27/Windows%20Terminal%EF%BC%88preview%EF%BC%89%20%E5%AE%89%E8%A3%85%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Prev</span>
+						<h3>Windows Terminal（preview） 安装踩坑记录</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>
+</div>
+
+<footer>
+  <div>
+  Copyright &copy; 2019.<a href="/">DaDa's technology Blog</a><br>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme <a href="https://lx.blleng.cn" target="_blank">Lx</a><br>
+  </div>
+</footer>
+</div>
+<a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i></a>
+<div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Search..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+<button class="menu-trigger"></button>
+<div class="menu">
+  <div class="menu-head">
+    <span class="layer">
+      <div class="col">
+        <div class="row for-pic">
+          <div class="profile-pic">
+            <a href="/about/"><img src="/images/person_1.jpg" alt="Eric Penguin"/></a>
+          </div>
+        </div>
+        <div class="row for-name">
+          <p>Eric Penguin</p>
+          <span class="tagline">Hello, World!</span>
+        </div>
+      </div>
+    </span>
+  </div>
+  <nav class="menu-container">
+  <ul class="menu-items">
+    <li><a href="/"><i class="fa fa-home fa-fw"></i>首页</a></li>
+    <li><a href="/tags/"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+    <li><a href="/about/"><i class="fa fa-bookmark fa-fw"></i>关于</a></li>
+    <!--
+     --!>
+  </ul>
+  </nav>
+</div>
+
+<div class="gototop js-top">
+  <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+</div>
+<script src="/js/jquery.easing.min.js"></script>
+<script src="/js/jquery.waypoints.min.js"></script>
+<script src="/js/jquery.stellar.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/local.search.js"></script>
+
+</body>
+</html>
